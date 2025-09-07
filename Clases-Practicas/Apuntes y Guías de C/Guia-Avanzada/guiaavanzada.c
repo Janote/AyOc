@@ -13,15 +13,22 @@ struct monstruo_t
 
 int main(int argc, char const *argv[])
 {
-    struct monstruo_t array_monstruoso[3] = {{"Jano",4,40,400}, {"Nico",5,50,500},{"Tomi",5,223,233}};
+    // struct monstruo_t array_monstruoso[3] = {{"Jano",4,40,400}, {"Nico",5,50,500},{"Tomi",5,223,233}};
 
-    for (uint32_t i = 0; i < sizeof(array_monstruoso) / sizeof(array_monstruoso[0]); i++)
-    {
-        printf("Nombre: %s\n",array_monstruoso[i].nombre);
-        printf("Vida: %d\n",array_monstruoso[i].vida);
+    // for (uint32_t i = 0; i < sizeof(array_monstruoso) / sizeof(array_monstruoso[0]); i++)
+    // {
+    //     printf("Nombre: %s\n",array_monstruoso[i].nombre);
+    //     printf("Vida: %d\n",array_monstruoso[i].vida);
 
-    }
-    
+    // }
 
+    int x = 123; 
+    int* pointer;
+
+    printf("La direccion de memoria de x es: %p\n",&x);
+    printf("El valor de x es: %d\n",x);
+    printf("La direccion de memoria de mi puntero p es: %p\n",&pointer);
+    printf("El valor de lo que apunta mi puntero pointer es: %d\n",*pointer);
+    return 0;
 }
 
